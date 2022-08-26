@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/nav.module.css';
+import Icons from './Icons';
 
 const Nav = () => {
   return (
@@ -20,6 +21,7 @@ const Nav = () => {
             <a>Works</a>
           </Link>
         </li>
+        <Icons />
       </ul>
     </nav>
   );
