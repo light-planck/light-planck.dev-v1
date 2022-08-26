@@ -1,29 +1,30 @@
 import Link from 'next/link';
 import styles from '../styles/nav.module.css';
-import Icons from './Icons';
+import Social from './Social';
 
 const Nav = () => {
   return (
-    <nav>
-      <ul className={styles.list}>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/about">
-            <a>About</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/works">
-            <a>Works</a>
-          </Link>
-        </li>
-        <Icons />
-      </ul>
-    </nav>
+    <>
+      <nav>
+        <ul className={styles.list}>
+          <li>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/works">
+              <a>Works</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 };
 
