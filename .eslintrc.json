@@ -8,6 +8,6 @@
   },
   "root": true,
   "rules": {
-    "consistent-default-export-name/default-export-match-filename": "error",
+    "consistent-default-export-name/default-export-match-filename": "error"
   }
 }

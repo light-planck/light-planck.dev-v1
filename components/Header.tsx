@@ -2,15 +2,18 @@ import Logo from './Logo';
 import Nav from './Nav';
 import styles from '../styles/header.module.css';
 import Social from './Social';
+import Container from './Container';
 
 const Header = () => {
   return (
     <header>
-      <div className={styles.flexContainer}>
-        <Logo />
-        <Nav />
-        <Social />
-      </div>
+      <Container large>
+        <div className={styles.flexContainer}>
+          <Logo />
+          <Nav />
+          <Social />
+        </div>
+      </Container>
     </header>
   );
 };

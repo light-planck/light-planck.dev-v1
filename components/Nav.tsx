@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from '../styles/nav.module.css';
-import Social from './Social';
 
 const Nav = () => {
   return (
