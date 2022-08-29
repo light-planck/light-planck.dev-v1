@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "eslint --fix './src/**/*.{js,ts}' && prettier --write './src/**/*.{js,ts}'",
-    "format": "prettier --check .",
-    "format:fix": "prettier --write .",
+    "format": "prettier --check . && prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
