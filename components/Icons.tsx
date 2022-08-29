@@ -1,7 +1,7 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import styles from '../styles/icons.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import styles from '../styles/icons.module.css'
 
 const Icons = () => {
   return (
@@ -17,7 +17,7 @@ const Icons = () => {
         </a>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default Icons;
+export default Icons

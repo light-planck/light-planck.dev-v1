@@ -12,7 +12,6 @@
 
 /* モバイル */
 @media (max-width: 767px) {
-
   /* ボタン */
   .btn {
     all: unset;

@@ -30,7 +30,8 @@
 /* 基本設定 */
 body {
   color: var(--black);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial',
+    sans-serif;
   font-size: var(--body);
 }
 
@@ -47,7 +48,7 @@ h3 {
 }
 
 /* next/image */
-span>img {
+span > img {
   transition: 0.2s;
 }
 

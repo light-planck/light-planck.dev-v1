@@ -1,8 +1,8 @@
-import Logo from './Logo';
-import Nav from './Nav';
-import styles from '../styles/header.module.css';
-import Social from './Social';
-import Container from './Container';
+import Logo from './Logo'
+import Nav from './Nav'
+import styles from '../styles/header.module.css'
+import Social from './Social'
+import Container from './Container'
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         </div>
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

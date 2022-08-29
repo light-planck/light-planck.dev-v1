@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from '../styles/nav.module.css';
+import Link from 'next/link'
+import styles from '../styles/nav.module.css'
 
 const Nav = () => {
   return (
@@ -24,7 +24,7 @@ const Nav = () => {
         </ul>
       </nav>
     </>
-  );
-};
+  )
+}
 
-export default Nav;
+export default Nav

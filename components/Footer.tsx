@@ -1,7 +1,7 @@
-import Container from './Container';
-import Logo from './Logo';
-import Social from './Social';
-import styles from '../styles/footer.module.css';
+import Container from './Container'
+import Logo from './Logo'
+import Social from './Social'
+import styles from '../styles/footer.module.css'
 
 const Footer = () => {
   return (
@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
       </Container>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

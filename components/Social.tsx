@@ -1,9 +1,6 @@
-import styles from '../styles/social.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faTwitter,
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons';
+import styles from '../styles/social.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Social = () => {
   return (
@@ -21,7 +18,7 @@ const Social = () => {
         </a>
       </li>
     </ul>
-  );
-};
+  )
+}
 
-export default Social;
+export default Social
