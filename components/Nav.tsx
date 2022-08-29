@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../styles/nav.module.css'
 
-const Nav = () => {
+const Nav = (): JSX.Element => {
   return (
     <>
       <nav>

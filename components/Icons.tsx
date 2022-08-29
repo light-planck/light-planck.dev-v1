@@ -1,9 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/icons.module.css'
 
-const Icons = () => {
+const Icons = (): JSX.Element => {
   return (
     <ul className={styles.list}>
       <li>

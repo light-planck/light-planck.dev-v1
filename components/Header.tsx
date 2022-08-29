@@ -3,8 +3,9 @@ import Nav from './Nav'
 import styles from '../styles/header.module.css'
 import Social from './Social'
 import Container from './Container'
+import { FC } from 'react'
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header>
       <Container large>
