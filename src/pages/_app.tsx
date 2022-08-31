@@ -3,10 +3,16 @@ import type { AppProps } from 'next/app'
 
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
+import Layout from 'components/Layout'
+import { NextPage } from 'next'
 config.autoAddCss = false
 
-function MyApp({ Component, pageProps }: AppProps): JSX.Element {
-  return <Component {...pageProps} />
+const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp
