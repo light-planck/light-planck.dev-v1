@@ -1,10 +1,15 @@
+import { NextPage } from 'next'
 import Link from 'next/link'
 import styles from '../styles/logo.module.css'
 
-const Logo = (): JSX.Element => {
+interface Props {
+  boxOn?: boolean
+}
+
+const Logo: NextPage<Props> = ({ boxOn = false }) => {
   return (
     <Link href="/">
-      <a className={styles.box}>light</a>
+      <a className={boxOn ? styles.box : styles.basic}>light</a>
     </Link>
   )
 }

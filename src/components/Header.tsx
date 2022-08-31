@@ -10,7 +10,7 @@ const Header: FC = () => {
     <header>
       <Container large>
         <div className={styles.flexContainer}>
-          <Logo />
+          <Logo boxOn />
           <Nav />
           <Social />
         </div>
