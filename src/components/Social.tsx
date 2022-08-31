@@ -1,8 +1,9 @@
 import styles from '../styles/social.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { NextPage } from 'next'
 
-const Social = (): JSX.Element => {
+const Social: NextPage = () => {
   return (
     <ul className={styles.list}>
       <li>

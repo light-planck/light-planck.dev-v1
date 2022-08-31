@@ -1,7 +1,8 @@
+import { NextPage } from 'next'
 import Link from 'next/link'
 import styles from '../styles/nav.module.css'
 
-const Nav = (): JSX.Element => {
+const Nav: NextPage = () => {
   return (
     <>
       <nav>

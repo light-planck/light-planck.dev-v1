@@ -1,12 +1,12 @@
 import styles from 'styles/hero.module.css'
-import { FC } from 'react'
+import { NextPage } from 'next'
 
 interface Props {
   title: string
   subtitle: string
 }
 
-const Hero: FC<Props> = ({ title, subtitle }) => {
+const Hero: NextPage<Props> = ({ title, subtitle }) => {
   return (
     <div className={styles.flexContainer}>
       <div className={styles.text}>

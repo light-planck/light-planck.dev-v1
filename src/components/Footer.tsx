@@ -2,9 +2,9 @@ import Container from './Container'
 import Logo from './Logo'
 import Social from './Social'
 import styles from '../styles/footer.module.css'
-import { FC } from 'react'
+import { NextPage } from 'next'
 
-const Footer: FC = () => {
+const Footer: NextPage = () => {
   return (
     <footer className={styles.wrapper}>
       <Container>

@@ -3,9 +3,9 @@ import Nav from './Nav'
 import styles from '../styles/header.module.css'
 import Social from './Social'
 import Container from './Container'
-import { FC } from 'react'
+import { NextPage } from 'next'
 
-const Header: FC = () => {
+const Header: NextPage = () => {
   return (
     <header>
       <Container large>
