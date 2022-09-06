@@ -1,11 +1,13 @@
 import Container from 'components/Container'
 import Hero from 'components/Hero'
+import Meta from 'components/Meta'
 import PostBody from 'components/PostBody'
 import { NextPage } from 'next'
 
 const about: NextPage = () => {
   return (
     <Container>
+      <Meta pageTitle="About" />
       <Hero title="About" subtitle="私について" />
 
       <PostBody>
