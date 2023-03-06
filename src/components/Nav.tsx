@@ -1,4 +1,4 @@
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 import Link from 'next/link'
 import styles from '../styles/nav.module.css'
 
@@ -8,19 +8,13 @@ const Nav: NextPage = () => {
       <nav>
         <ul className={styles.list}>
           <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/works">
-              <a>Works</a>
-            </Link>
+            <Link href="/works">Works</Link>
           </li>
         </ul>
       </nav>

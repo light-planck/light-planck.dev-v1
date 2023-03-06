@@ -10,9 +10,7 @@ const Home: NextPage = () => {
         title="Home"
         subtitle="lightのホームページです。詳しくは下記のリンクから"
       />
-      <Link href="/about">
-        <a>私について</a>
-      </Link>
+      <Link href="/about">私について</Link>
     </Container>
   )
 }
