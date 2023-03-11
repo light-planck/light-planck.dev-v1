@@ -1,16 +1,14 @@
 import type { NextPage } from 'next'
 import Container from 'components/Container'
-import Hero from 'components/Hero'
-import Link from 'next/link'
+import PostBody from 'components/PostBody'
 
 const Home: NextPage = () => {
   return (
     <Container>
-      <Hero
-        title="Home"
-        subtitle="lightのホームページです。詳しくは下記のリンクから"
-      />
-      <Link href="/about">私について</Link>
+      <PostBody>
+        <h2>私について</h2>
+        <p>lightですけど？</p>
+      </PostBody>
     </Container>
   )
 }

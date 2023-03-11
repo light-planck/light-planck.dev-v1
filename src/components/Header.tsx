@@ -3,7 +3,7 @@ import Nav from './Nav'
 import styles from '../styles/header.module.css'
 import Social from './Social'
 import Container from './Container'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 const Header: NextPage = () => {
   return (

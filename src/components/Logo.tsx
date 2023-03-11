@@ -8,7 +8,7 @@ interface Props {
 
 const Logo: NextPage<Props> = ({ boxOn = false }) => {
   return (
-    <Link href="/" className={boxOn ? styles.box : styles.basic}>
+    <Link href="/" className={boxOn ? styles.box : styles.footer}>
       light
     </Link>
   )

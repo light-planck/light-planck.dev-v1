@@ -8,7 +8,11 @@
   composes: basic;
   display: inline-block;
   padding: 1em 2em;
-  background-color: var(--gray-75);
+  background-color: #66BF97;
   color: var(--white);
   font-size: var(--small-heading2);
+}
+
+.footer {
+  opacity: 0;
 }
