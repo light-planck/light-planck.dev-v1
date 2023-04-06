@@ -1,26 +1,24 @@
 import Container from 'components/Container'
-import Hero from 'components/Hero'
 import Meta from 'components/Meta'
 import PostBody from 'components/PostBody'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 const about: NextPage = () => {
   return (
     <Container>
       <Meta pageTitle="About" />
-      <Hero title="About" subtitle="私について" />
 
       <PostBody>
-        <p>Cubeが得意とする分野はモノづくりです。</p>
-        <h2>モノづくりで目指していること</h2>
-        <p>
-          モノづくりではデータの解析からクリエイティブまで幅広いことを担当しています。
-        </p>
-        <p>
-          単純に形にするだけでなく、作る過程や、なぜそのようにしたのかを大事にしながらものづくりをしています。
-        </p>
-        <h3>新しいことへのチャレンジ</h3>
-        <p>今までと違うものを作ることで愛着が湧いてきます。</p>
+        <h1>私について</h1>
+        <h2>☆名前</h2>
+        <p>らいとです。由来は名前の光一から来ています。</p>
+        <p>嘘です。正直なぜこの名前にしたか覚えていません。</p>
+        <h2>☆好きなこと</h2>
+        <p>読書、紅茶、瞑想が好きです。</p>
+        <p>文学が好きな人と仲良くなりたいです。切実に。</p>
+        <h2>☆競技プログラミングについて</h2>
+        <p>AtCoder好きです! C++でやっています。</p>
+        <p>レートは緑で、上位20%らしいです。すげ～</p>
       </PostBody>
     </Container>
   )

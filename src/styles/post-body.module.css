@@ -1,10 +1,10 @@
 .stack>*+* {
-  margin-top: var(--stack-space, 1.5em);
+  margin-top: var(--stack-space, 0.3em);
 }
 
 .stack h2,
 .stack h3 {
-  --stack-space: 2em;
+  --stack-space: 1.2em;
 }
 
 .stack h2+*,
