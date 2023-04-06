@@ -6,8 +6,12 @@ const Home: NextPage = () => {
   return (
     <Container>
       <PostBody>
-        <h2>私について</h2>
-        <p>lightですけど？</p>
+        <h1>ようこそ( ¨̮ )</h1>
+        <h2>☆このサイトは何？</h2>
+        <p>
+          競技プログラミングで学習したことをアウトプットするために作りました。
+        </p>
+        <p>コンテストの振り返りや解説記事を掲載していきます。</p>
       </PostBody>
     </Container>
   )
