@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import styles from '../styles/icons.module.css'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 const Icons: NextPage = () => {
   return (

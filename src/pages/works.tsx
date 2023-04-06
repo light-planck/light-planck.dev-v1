@@ -1,7 +1,7 @@
 import Container from 'components/Container'
 import Hero from 'components/Hero'
 import Meta from 'components/Meta'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 const works: NextPage = () => {
   return (

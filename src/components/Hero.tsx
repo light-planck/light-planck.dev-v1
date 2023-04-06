@@ -1,5 +1,5 @@
 import styles from 'styles/hero.module.css'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 interface Props {
   title: string

@@ -1,6 +1,6 @@
 import styles from 'styles/post-body.module.css'
-import { NextPage } from 'next'
-import { ReactNode } from 'react'
+import type { NextPage } from 'next'
+import type { ReactNode } from 'react'
 
 interface Props {
   children: ReactNode

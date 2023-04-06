@@ -1,6 +1,6 @@
 import styles from 'styles/container.module.css'
-import { ReactNode } from 'react'
-import { NextPage } from 'next'
+import type { ReactNode } from 'react'
+import type { NextPage } from 'next'
 
 interface Props {
   children: ReactNode

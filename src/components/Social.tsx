@@ -1,7 +1,7 @@
 import styles from '../styles/social.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
-import { NextPage } from 'next'
+import type { NextPage } from 'next'
 
 const Social: NextPage = () => {
   return (
