@@ -1,36 +1,43 @@
-# test
+# light-planck.dev
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## これは何？
+学習したことをアウトプットするサイトです。
+[light-planck.dev](https://www.light-planck.dev/)
 
-## Getting Started
+## 利用した技術
+|  技術  |  概要  |
+| ---- | ---- |
+| Git・GitHub | ソースコード管理 |
+| TypeScript | Reactで利用 |
+|Next.js|Reactフレームワーク|
+|Volta|Node.jsのバージョン管理|
+|Prettier|フォーマッター|
+|ESLint|リンター|
+|husky|Git hooks|
+|Vercel|デプロイ環境|
+|Google Domains|ドメイン購入|
 
-First, run the development server:
+## 各技術について
+- Next.js with TypeScript
+安全に開発でき、ルーティングが便利なので採用。
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- Volta
+dockerコンテナ上で開発しようとしたが、私のPCだと重かったので、Voltaを用いてNode.jsを管理した。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Prettier
+タブはスペース2、セミコロンなしで設定した。
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- ESLint
+コミット時に構文をチェックした。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- husky
+gitのコミット時にスクリプトを実行した。ESLintで構文チェックして問題なしならPrettierでフォーマットしてコミットした。
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Git, Github
+ブランチは主にmain, developの２つ。mainは本番環境で、developは開発用のブランチ。developではfeature/hoge, fix/hogeのように機能の追加やバグ修正用のブランチを切り、そこで開発を行った。
 
-## Learn More
+- Google Domains
+ここでドメインを購入した。
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Vercel
+Next.jsのプロジェクトを簡単にデプロイすることができた。ドメインの設定も簡単だった。
