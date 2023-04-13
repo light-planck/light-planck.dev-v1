@@ -2320,6 +2320,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json5@npm:1.0.0":
+  version: 1.0.0
+  resolution: "json5@npm:1.0.0"
+  dependencies:
+    minimist: "npm:^1.2.0"
+  bin:
+    json5: lib/cli.js
+  checksum: 88a84389faaed50eb36c6bde99a975f6a4b0ac4467716e54b4a4fa7df771d420f4ee6351f48bcbbf0ce7af0b3c7c71e4846718216af16c2f28bdc0165579dfe0
+  languageName: node
+  linkType: hard
+
 "json5@npm:^1.0.1":
   version: 1.0.1
   resolution: "json5@npm:1.0.1"
@@ -2328,15 +2339,6 @@ __metadata:
   bin:
     json5: lib/cli.js
   checksum: fd9492140ea8a1ec338c96e8527e940c9464ca3c7ef8fbf00b8bbbac1c6e60d612bf6640885e8a9108c3b71dc913f9a07a628df36f462853ea8c59bbce192e32
-  languageName: node
-  linkType: hard
-
-"json5@npm:^2.2.3":
-  version: 2.2.3
-  resolution: "json5@npm:2.2.3"
-  bin:
-    json5: lib/cli.js
-  checksum: e298f92c92197e956eb7a93304f74b5b80b4c3fe412f44a1f3d4c966e5ddf2e8ef2ac7ce0b0c40c78735bf2901c29257a653e1da684dae8e7835932e4904d6a0
   languageName: node
   linkType: hard
 
@@ -2970,7 +2972,7 @@ __metadata:
     eslint-plugin-promise: "npm:^6.1.1"
     eslint-plugin-react: "npm:^7.32.2"
     husky: "npm:^8.0.3"
-    json5: "npm:^2.2.3"
+    json5: "npm:1.0.0"
     lint-staged: "npm:^13.1.2"
     microcms-js-sdk: "npm:^2.3.2"
     next: "npm:13.2.3"
