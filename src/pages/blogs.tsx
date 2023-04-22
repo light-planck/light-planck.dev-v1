@@ -6,7 +6,7 @@ import type { Blog, Tag } from 'types/blog'
 export const getStaticProps = async () => {
   const blog = await client.get({ endpoint: 'blog' })
   const tag = await client.get({ endpoint: 'tag' })
-
+  
   return {
     props: {
       blogs: blog.contents,
