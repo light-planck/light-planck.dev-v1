@@ -3,7 +3,7 @@ import Meta from 'components/Meta'
 import PostBody from 'components/PostBody'
 import type { NextPage } from 'next'
 
-const about: NextPage = () => {
+const About: NextPage = () => {
   return (
     <Container>
       <Meta pageTitle="About" />
@@ -25,4 +25,4 @@ const about: NextPage = () => {
   )
 }
 
-export default about
+export default About

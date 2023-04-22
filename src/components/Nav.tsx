@@ -14,7 +14,7 @@ const Nav: NextPage = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/posts">Posts</Link>
+            <Link href="/blogs">Blogs</Link>
           </li>
         </ul>
       </nav>
