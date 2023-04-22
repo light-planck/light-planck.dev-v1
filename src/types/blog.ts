@@ -8,7 +8,7 @@ export interface Blog {
   updatedAt: string
   publishedAt: string
   revisedAt: string
-};
+}
 
 export interface Tag {
   id: string
@@ -17,4 +17,4 @@ export interface Tag {
   updatedAt: string
   publishedAt: string
   revisedAt: string
-};
+}

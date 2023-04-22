@@ -8,7 +8,7 @@
   composes: basic;
   display: inline-block;
   padding: 1em 2em;
-  background-color: #66BF97;
+  background-color: #66bf97;
   color: var(--white);
   font-size: var(--small-heading2);
 }

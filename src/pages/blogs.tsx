@@ -1,23 +1,19 @@
-import { client } from 'libs/client';
-import type {
-  InferGetStaticPropsType,
-  NextPage,
-} from 'next'
-import Link from 'next/link';
-import type { Blog, Tag } from 'types/blog';
-
+import { client } from 'libs/client'
+import type { InferGetStaticPropsType, NextPage } from 'next'
+import Link from 'next/link'
+import type { Blog, Tag } from 'types/blog'
 
 export const getStaticProps = async () => {
-  const blog = await client.get({ endpoint: "blog" });
-  const tag = await client.get({ endpoint: "tag" });
-  
+  const blog = await client.get({ endpoint: 'blog' })
+  const tag = await client.get({ endpoint: 'tag' })
+
   return {
     props: {
       blogs: blog.contents,
       tags: tag.contents,
     },
-  };
-};
+  }
+}
 
 interface Props {
   blogs: Blog[]
