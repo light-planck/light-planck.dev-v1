@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { siteMeta } from 'lib/constants'
+import { siteMeta } from 'libs/constants'
 const { siteIcon } = siteMeta
 
 interface Props {
