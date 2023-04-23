@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Container from 'components/Container'
 import PostBody from 'components/PostBody'
 import { client } from 'libs/client'
+import Meta from 'components/Meta'
 
 // any型に注意！！
 export const getStaticProps = async (): Promise<any> => {
@@ -19,6 +20,7 @@ export const getStaticProps = async (): Promise<any> => {
 const Home: NextPage = () => {
   return (
     <Container>
+      <Meta pageTitle="Home" />
       <PostBody>
         <h1>ようこそ( ¨̮ )</h1>
         <h2>☆このサイトは何？</h2>
