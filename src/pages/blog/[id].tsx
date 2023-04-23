@@ -9,9 +9,6 @@ import 'highlight.js/styles/atom-one-dark-reasonable.css'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' })
-
-  console.log(data.contents)
-
   const paths = data.contents.map((content: Blog) => `/blog/${content.id}`)
   return { paths, fallback: false }
 }
@@ -20,7 +17,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string
   const data = await client.get({ endpoint: 'blog', contentId: id })
 
-  const $ = load(data.body)
+  const $ = load(data.body ?? '')
   $('pre code').each((_, elm) => {
     const result = hljs.highlightAuto($(elm).text())
     $(elm).html(result.value)
