@@ -10,7 +10,7 @@ import 'highlight.js/styles/atom-one-dark-reasonable.css'
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' })
 
-  const paths = data.contents.map((content: Blog) => `/blog/${content.id}`)
+  const paths = data.contents.map((content: Blog) => `/blog/${content?.id}`)
   return { paths, fallback: false }
 }
 
