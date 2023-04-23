@@ -18,6 +18,7 @@
 |     husky      |        Git hooks         |
 |     Vercel     |       デプロイ環境       |
 | Google Domains |       ドメイン購入       |
+|    microCMS    |      ヘッドレスCMS       |
 
 ## 各技術について
 
