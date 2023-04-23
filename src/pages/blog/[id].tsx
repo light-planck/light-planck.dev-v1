@@ -7,7 +7,6 @@ import { load } from 'cheerio'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark-reasonable.css'
 
-// APIリクエストを行うパスを指定
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' })
 
@@ -15,7 +14,6 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return { paths, fallback: false }
 }
 
-// microCMSへAPIリクエスト
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id as string
   const data = await client.get({ endpoint: 'blog', contentId: id })
@@ -35,7 +33,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-// Props（blog）の型
 interface Props {
   blog: Blog
 }
