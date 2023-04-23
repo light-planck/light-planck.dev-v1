@@ -15,7 +15,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const id = context.params?.id
+  const id = context.params?.id as string | undefined
   const data = await client.get({ endpoint: 'blog', contentId: id })
 
   const $ = load(data.body)
