@@ -17,7 +17,7 @@ const About: NextPage = () => {
           <h2>☆好きなこと</h2>
           <p>プログラミング・読書・瞑想・蕎麦・サウナ</p>
           <h2>☆競技プログラミングについて</h2>
-          <p>AtCoder好きです! C++でやっています。</p>
+          <p>AtCoder好きです💞C++でやっています。</p>
           <p>レートは緑🟩（上位30%）です！</p>
           <a
             href="https://atcoder.jp/users/planck16"

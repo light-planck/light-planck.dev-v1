@@ -46,7 +46,8 @@ const Blogs: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             {blogs.map((blog) => (
               <li key={blog.id}>
                 <Link href={`/blog/${blog.id}`}>
-                  {blog.title}({blog.updatedAt})
+                  {blog.title + ' ('}
+                  {blog.publishedAt + ')'}
                 </Link>
               </li>
             ))}
