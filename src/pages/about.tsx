@@ -19,7 +19,13 @@ const About: NextPage = () => {
         <h2>☆競技プログラミングについて</h2>
         <p>AtCoder好きです! C++でやっています。</p>
         <p>レートは緑で、上位20%らしいです。すげ～</p>
-        <a href="https://atcoder.jp/users/planck16">AtCoderのプロフィール</a>
+        <a
+          href="https://atcoder.jp/users/planck16"
+          target="_blank"
+          rel="noreferrer"
+        >
+          AtCoderのプロフィール
+        </a>
       </PostBody>
     </Container>
   )

@@ -1,12 +1,25 @@
+import Container from 'components/Container'
+import PostBody from 'components/PostBody'
 import { client } from 'libs/client'
-import type { InferGetStaticPropsType, NextPage } from 'next'
+import type {
+  InferGetStaticPropsType,
+  NextPage,
+  GetStaticPropsResult,
+} from 'next'
 import Link from 'next/link'
 import type { Blog, Tag } from 'types/blog'
 
-export const getStaticProps = async () => {
+interface Props {
+  blogs: Blog[]
+  tags: Tag[]
+}
+
+export const getStaticProps = async (): Promise<
+  GetStaticPropsResult<Props>
+> => {
   const blog = await client.get({ endpoint: 'blog' })
   const tag = await client.get({ endpoint: 'tag' })
-  
+
   return {
     props: {
       blogs: blog.contents,
@@ -15,24 +28,23 @@ export const getStaticProps = async () => {
   }
 }
 
-interface Props {
-  blogs: Blog[]
-  tags: Tag[]
-}
-
 const Blogs: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
 }: Props) => {
   return (
-    <div>
-      <ul>
-        {blogs.map((blog) => (
-          <li key={blog.id}>
-            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Container>
+      <PostBody>
+        <ul>
+          {blogs.map((blog) => (
+            <li key={blog.id}>
+              <Link href={`/blog/${blog.id}`}>
+                {blog.title}({blog.updatedAt})
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </PostBody>
+    </Container>
   )
 }
 

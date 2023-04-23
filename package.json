@@ -14,6 +14,8 @@
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-brands-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "highlight.js": "^11.7.0",
     "json5": "^2.2.3",
     "microcms-js-sdk": "^2.3.3",
     "next": "13.2.3",
@@ -21,6 +23,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@types/cheerio": "^0.22.31",
+    "@types/highlightjs": "^9.12.2",
     "@types/node": "18.14.6",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
