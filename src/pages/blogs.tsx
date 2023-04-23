@@ -7,6 +7,7 @@ import type {
   NextPage,
   GetStaticPropsResult,
 } from 'next'
+import Head from 'next/head'
 import Link from 'next/link'
 import type { Blog, Tag } from 'types/blog'
 
@@ -33,21 +34,26 @@ const Blogs: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
   blogs,
 }: Props) => {
   return (
-    <Container>
-      <Meta pageTitle="Blogs" />
-      <PostBody>
-        <h1>記事一覧</h1>
-        <ul>
-          {blogs.map((blog) => (
-            <li key={blog.id}>
-              <Link href={`/blog/${blog.id}`}>
-                {blog.title}({blog.updatedAt})
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </PostBody>
-    </Container>
+    <div>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <Container>
+        <Meta pageTitle="Blogs" />
+        <PostBody>
+          <h1>記事一覧</h1>
+          <ul>
+            {blogs.map((blog) => (
+              <li key={blog.id}>
+                <Link href={`/blog/${blog.id}`}>
+                  {blog.title}({blog.updatedAt})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </PostBody>
+      </Container>
+    </div>
   )
 }
 
