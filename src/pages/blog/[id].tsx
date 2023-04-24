@@ -6,6 +6,7 @@ import PostBody from 'components/PostBody'
 import { load } from 'cheerio'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark-reasonable.css'
+import Head from 'next/head'
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: 'blog' })
@@ -38,18 +39,20 @@ interface Props {
 
 const BlogId: NextPage<Props> = ({ blog }: Props) => {
   return (
-    <Container>
-      <PostBody>
-        {blog.tags.map((tag) => (
-          <li key={tag.id}>#{tag.tag}</li>
-        ))}
-        <div
-          dangerouslySetInnerHTML={{
-            __html: `${blog.body}`,
-          }}
-        />
-      </PostBody>
-    </Container>
+    <div>
+      <Head>
+        <title>{blog.id}</title>
+      </Head>
+      <Container>
+        <PostBody>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `${blog.body}`,
+            }}
+          />
+        </PostBody>
+      </Container>
+    </div>
   )
 }
 
