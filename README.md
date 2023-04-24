@@ -5,11 +5,6 @@
 学習したことをアウトプットするサイトです。
 [light-planck.dev](https://www.light-planck.dev/)
 
-## 成果物
-
-[light-planck.dev](https://www.light-planck.dev/)
-競技プログラミングで学んだことをアウトプットする jamstack ブログです。
-
 ## 利用した技術
 
 |         技術          |              概要              |
