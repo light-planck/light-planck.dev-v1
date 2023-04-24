@@ -1,4 +1,5 @@
 import Container from 'components/Container'
+import ConvertDate from 'components/ConvertDate'
 import Meta from 'components/Meta'
 import PostBody from 'components/PostBody'
 import { client } from 'libs/client'
@@ -10,6 +11,7 @@ import type {
 import Head from 'next/head'
 import Link from 'next/link'
 import type { Blog, Tag } from 'types/blog'
+import styles from 'styles/blogs.module.css'
 
 interface Props {
   blogs: Blog[]
@@ -46,8 +48,10 @@ const Blogs: NextPage<InferGetStaticPropsType<typeof getStaticProps>> = ({
             {blogs.map((blog) => (
               <li key={blog.id}>
                 <Link href={`/blog/${blog.id}`}>
-                  {blog.title + ' ('}
-                  {blog.publishedAt + ')'}
+                  {blog.title}
+                  <span className={styles.date}>
+                    <ConvertDate dateISO={blog.publishedAt} />
+                  </span>
                 </Link>
               </li>
             ))}
