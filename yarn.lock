@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 7
+  version: 6
   cacheKey: 9
 
 "@babel/runtime-corejs3@npm:^7.10.2":
@@ -3125,37 +3125,37 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "portfolio@workspace:."
   dependencies:
-    "@fortawesome/fontawesome-svg-core": "npm:^6.3.0"
-    "@fortawesome/free-brands-svg-icons": "npm:^6.3.0"
-    "@fortawesome/react-fontawesome": "npm:^0.2.0"
-    "@types/cheerio": "npm:^0.22.31"
-    "@types/highlightjs": "npm:^9.12.2"
-    "@types/node": "npm:18.14.6"
-    "@types/react": "npm:18.0.28"
-    "@types/react-dom": "npm:18.0.11"
-    "@typescript-eslint/eslint-plugin": "npm:^5.54.0"
-    "@typescript-eslint/parser": "npm:^5.54.0"
-    cheerio: "npm:^1.0.0-rc.12"
-    date-fns: "npm:^2.29.3"
-    eslint: "npm:^8.35.0"
-    eslint-config-next: "npm:13.2.3"
-    eslint-config-prettier: "npm:^8.7.0"
-    eslint-config-standard-with-typescript: "npm:^34.0.0"
-    eslint-plugin-consistent-default-export-name: "npm:^0.0.15"
-    eslint-plugin-import: "npm:^2.27.5"
-    eslint-plugin-n: "npm:^15.6.1"
-    eslint-plugin-promise: "npm:^6.1.1"
-    eslint-plugin-react: "npm:^7.32.2"
-    highlight.js: "npm:^11.7.0"
-    husky: "npm:^8.0.3"
-    json5: "npm:^2.2.3"
-    lint-staged: "npm:^13.2.1"
-    microcms-js-sdk: "npm:^2.3.3"
-    next: "npm:^13.3.1"
-    prettier: "npm:2.8.4"
-    react: "npm:18.2.0"
-    react-dom: "npm:18.2.0"
-    typescript: "npm:^4.9.5"
+    "@fortawesome/fontawesome-svg-core": ^6.3.0
+    "@fortawesome/free-brands-svg-icons": ^6.3.0
+    "@fortawesome/react-fontawesome": ^0.2.0
+    "@types/cheerio": ^0.22.31
+    "@types/highlightjs": ^9.12.2
+    "@types/node": 18.14.6
+    "@types/react": 18.0.28
+    "@types/react-dom": 18.0.11
+    "@typescript-eslint/eslint-plugin": ^5.54.0
+    "@typescript-eslint/parser": ^5.54.0
+    cheerio: ^1.0.0-rc.12
+    date-fns: ^2.29.3
+    eslint: ^8.35.0
+    eslint-config-next: 13.2.3
+    eslint-config-prettier: ^8.7.0
+    eslint-config-standard-with-typescript: ^34.0.0
+    eslint-plugin-consistent-default-export-name: ^0.0.15
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-n: ^15.6.1
+    eslint-plugin-promise: ^6.1.1
+    eslint-plugin-react: ^7.32.2
+    highlight.js: ^11.7.0
+    husky: ^8.0.3
+    json5: ^2.2.3
+    lint-staged: ^13.2.1
+    microcms-js-sdk: ^2.3.3
+    next: ^13.3.1
+    prettier: 2.8.4
+    react: 18.2.0
+    react-dom: 18.2.0
+    typescript: ^4.9.5
   languageName: unknown
   linkType: soft
 
@@ -3306,29 +3306,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^1.20.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.0#optional!builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.1#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@npm%3A^1.22.1#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#optional!builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: a6f214b97d932445796f78dab7a898ec78966327e0d6cb571f90b6ac0f3b3347bf6bab0a071d899bfdc316b26ed845f6655310b38b8f6ee4da5272a0c5ecef85
+  checksum: 8/5656f4d0bedcf8eb52685c1abdf8fbe73a1603bb1160a24d716e27a57f6cecbe2432ff9c89c2bd57542c3a7b9d14b1882b73bfe2e9d7849c9a4c0b8b39f02b8b
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@npm%3A^2.0.0-next.4#optional!builtin<compat/resolve>":
+"resolve@patch:resolve@npm%3A^2.0.0-next.4#~builtin<compat/resolve>":
   version: 2.0.0-next.4
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#optional!builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.4#~builtin<compat/resolve>::version=2.0.0-next.4&hash=c3c19d"
   dependencies:
     is-core-module: "npm:^2.9.0"
     path-parse: "npm:^1.0.7"
     supports-preserve-symlinks-flag: "npm:^1.0.0"
   bin:
     resolve: bin/resolve
-  checksum: 04c825cca722397520f79c0d7a9160259032af786efcc9d434c728e5e69117a9241da844a9ca3cc430fe63a0c41571c8ac9f193dd3216a3b65a14d7850f8ef5d
+  checksum: 8/4bf9f4f8a458607af90518ff73c67a4bc1a38b5a23fef2bb0ccbd45e8be89820a1639b637b0ba377eb2be9eedfb1739a84cde24fe4cd670c8207d8fea922b011
   languageName: node
   linkType: hard
 
@@ -3842,13 +3842,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@^4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=23ec76"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 09f82f25664c79d5cccc389502175093becf51d691b443c79294303681544a399fb42f8384b535ddeba48cadb64e7d14b42de40d8ade4418bb43174989dd8685
+  checksum: 8/ab417a2f398380c90a6cf5a5f74badd17866adf57f1165617d6a551f059c3ba0a3e4da0d147b3ac5681db9ac76a303c5876394b13b3de75fdd5b1eaa06181c9d
   languageName: node
   linkType: hard
 
@@ -3972,9 +3972,9 @@ __metadata:
   linkType: hard
 
 "yaml@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "yaml@npm:2.2.1"
-  checksum: 6a9e540d14030184df84ea8b79adbfe5c40fad79d10cb9fef28625cd6cfcfa3f28e09eda1b9f0d6f2f8354878f71ed3e6bf972d8d787bea1e8c6bf468f2c9cca
+  version: 2.2.2
+  resolution: "yaml@npm:2.2.2"
+  checksum: 8/d90c235e099e30094dcff61ba3350437aef53325db4a6bcd04ca96e1bfe7e348b191f6a7a52b5211e2dbc4eeedb22a00b291527da030de7c189728ef3f2b4eb3
   languageName: node
   linkType: hard
 
