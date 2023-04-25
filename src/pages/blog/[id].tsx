@@ -37,7 +37,7 @@ interface Props {
   blog: Blog
 }
 
-const BlogId: NextPage<Props> = ({ blog }: Props) => {
+const BlogId: NextPage<Props> = ({ blog }) => {
   return (
     <div>
       <Head>
