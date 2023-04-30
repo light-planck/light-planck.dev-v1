@@ -1,20 +1,24 @@
 import Logo from './Logo'
 import Nav from './Nav'
-import styles from '../styles/header.module.css'
 import Social from './Social'
-import Container from './Container'
 import type { NextPage } from 'next'
 
 const Header: NextPage = () => {
   return (
-    <header>
-      <Container large>
-        <div className={styles.flexContainer}>
-          <Logo boxOn />
-          <Nav />
-          <Social />
-        </div>
-      </Container>
+    <header style={{ height: '10rem' }}>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          borderBottom: 'solid',
+          borderColor: '#4d4e4f',
+          borderWidth: '0.15em',
+        }}
+      >
+        <Logo />
+        <Nav />
+        <Social />
+      </div>
     </header>
   )
 }

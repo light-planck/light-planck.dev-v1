@@ -52,4 +52,3 @@
 
 - cheerio, highlight.js  
   cheerio を用いて HTML をパースし、highlight.js でコードブロックのハイライトを行った。
-

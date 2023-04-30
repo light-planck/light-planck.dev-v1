@@ -1,7 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next'
 import { client } from 'libs/client'
 import type { Blog } from 'types/blog'
-import Container from 'components/Container'
 import PostBody from 'components/PostBody'
 import { load } from 'cheerio'
 import hljs from 'highlight.js'
@@ -43,15 +42,13 @@ const BlogId: NextPage<Props> = ({ blog }) => {
       <Head>
         <title>{blog.id}</title>
       </Head>
-      <Container>
-        <PostBody>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `${blog.body}`,
-            }}
-          />
-        </PostBody>
-      </Container>
+      <PostBody>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${blog.body}`,
+          }}
+        />
+      </PostBody>
     </div>
   )
 }

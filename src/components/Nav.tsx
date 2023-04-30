@@ -1,24 +1,40 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import styles from '../styles/nav.module.css'
 
 const Nav: NextPage = () => {
   return (
-    <>
-      <nav>
-        <ul className={styles.list}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-          <li>
-            <Link href="/blogs">Blogs</Link>
-          </li>
-        </ul>
-      </nav>
-    </>
+    <nav style={{ margin: '2em' }}>
+      <ul
+        style={{
+          listStyle: 'none',
+          display: 'flex',
+          gap: '1.2em',
+          fontSize: '1.5em',
+        }}
+      >
+        <li>
+          <Link href="/" style={{ color: 'white', textDecoration: 'none' }}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/about"
+            style={{ color: 'white', textDecoration: 'none' }}
+          >
+            About
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/posts"
+            style={{ color: 'white', textDecoration: 'none' }}
+          >
+            Posts
+          </Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 

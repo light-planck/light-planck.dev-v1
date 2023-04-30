@@ -1,15 +1,25 @@
 import type { NextPage } from 'next'
 import Link from 'next/link'
-import styles from '../styles/logo.module.css'
+import { Recursive } from 'next/font/google'
 
-interface Props {
-  boxOn?: boolean
-}
+const recursive = Recursive({
+  weight: '400',
+  subsets: ['latin'],
+})
 
-const Logo: NextPage<Props> = ({ boxOn = false }) => {
+const Logo: NextPage = () => {
   return (
-    <Link href="/" className={boxOn ? styles.box : styles.footer}>
-      light
+    <Link
+      href="/"
+      style={{
+        fontSize: '48px',
+        color: '#369FFF',
+        textDecoration: 'none',
+        fontFamily: recursive.style.fontFamily,
+        margin: '0.5em',
+      }}
+    >
+      light planck
     </Link>
   )
 }
