@@ -5,7 +5,7 @@ import type { NextPage } from 'next'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-const Container = css`
+const container = css`
   display: flex;
   justify-content: space-between;
   border-bottom: solid;
@@ -17,7 +17,7 @@ const Container = css`
 const Header: NextPage = () => {
   return (
     <header>
-      <div css={Container}>
+      <div css={container}>
         <Logo />
         <Nav />
         <Social />
