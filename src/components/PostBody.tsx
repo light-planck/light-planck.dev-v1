@@ -7,11 +7,7 @@ const post = css`
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-  /* font-family: 'Noto Sans JP', sans-serif; */
-  margin-top: 2em;
-  margin-left: 5em;
-  margin-right: 15em;
-  padding: 1.5em;
+  font-family: 'Noto Sans JP', sans-serif;
 
   h1 {
     font-size: 3em;
@@ -46,7 +42,19 @@ interface Props {
 }
 
 const PostBody: NextPage<Props> = ({ children }) => {
-  return <div css={post}>{children}</div>
+  return (
+    <div
+      css={post}
+      style={{
+        marginTop: '2em',
+        marginLeft: '5em',
+        marginRight: '15em',
+        padding: '1.5em',
+      }}
+    >
+      {children}
+    </div>
+  )
 }
 
 export default PostBody
