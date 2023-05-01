@@ -57,11 +57,11 @@
 - cheerio, highlight.js  
   cheerio を用いて HTML をパースし、highlight.js でコードブロックのハイライトを行った。
 
-- modern-css-reset
+- modern-css-reset  
   リセットCSSとして利用した。
 
-- Emotion
+- Emotion  
   当初は CSS-modules でスタイルをあてていたが、管理が大変だったので、css in JS でスタイルをあてた。
 
-- Google Fonts
+- Google Fonts  
   Noto Sans JP', sans-serif, Noto Serif JP', serif, Robotoを利用した。
