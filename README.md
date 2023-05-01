@@ -5,21 +5,25 @@
 学習したことをアウトプットするサイトです。
 [light-planck.dev](https://www.light-planck.dev/)
 
-## 利用した技術
+## 技術スタック
 
-|         技術          |              概要              |
-| :-------------------: | :----------------------------: |
-|      Git・GitHub      |        ソースコード管理        |
-|      TypeScript       |          React で利用          |
-|        Next.js        |      React フレームワーク      |
-|         Volta         |    Node.js のバージョン管理    |
-|       Prettier        |         フォーマッター         |
-|        ESLint         |            リンター            |
-|  husky・lint-staged   |           Git hooks            |
-|        Vercel         |          デプロイ環境          |
-|    Google Domains     |          ドメイン購入          |
-|       microCMS        |         ヘッドレス CMS         |
-| cheerio・highlight.js | 記事のソースコードのハイライト |
+|         技術          |              概要              |       Version       |
+| :-------------------: | :----------------------------: | :-----------------: |
+|      Git・GitHub      |        ソースコード管理        |       2.34.1        |
+|      TypeScript       |          React で利用          |        4.9.5        |
+|         React         |         JS ライブラリ          |       18.2.0        |
+|        Next.js        |      React フレームワーク      |       13.3.1        |
+|         Volta         |    Node.js のバージョン管理    |        1.1.1        |
+|       Prettier        |         フォーマッター         |        2.8.4        |
+|        ESLint         |            リンター            |       8.35.0        |
+|  husky・lint-staged   |           Git hooks            |    8.0.3, 13.2.1    |
+|        Vercel         |          デプロイ環境          |          -          |
+|    Google Domains     |          ドメイン購入          |          -          |
+|       microCMS        |         ヘッドレス CMS         |     2.3.3 (sdk)     |
+| cheerio・highlight.js | 記事のソースコードのハイライト | 1.0.0-rc.12, 9.12.2 |
+|   modern-css-reset    |          リセット CSS          |        1.4.0        |
+|        Emotion        |           CSS in JS            |       11.10.8       |
+|     Google Fonts      |            フォント            |          -          |
 
 ## 各技術について
 
@@ -52,3 +56,12 @@
 
 - cheerio, highlight.js  
   cheerio を用いて HTML をパースし、highlight.js でコードブロックのハイライトを行った。
+
+- modern-css-reset
+  リセットCSSとして利用した。
+
+- Emotion
+  当初は CSS-modules でスタイルをあてていたが、管理が大変だったので、css in JS でスタイルをあてた。
+
+- Google Fonts
+  Noto Sans JP', sans-serif, Noto Serif JP', serif, Robotoを利用した。
