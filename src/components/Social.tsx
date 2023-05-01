@@ -2,11 +2,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
 import type { NextPage } from 'next'
 
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
+const list = css`
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  margin: 3em;
+`
+
 const Social: NextPage = () => {
   return (
-    <ul
-      style={{ listStyle: 'none', display: 'flex', gap: '1em', margin: '3em' }}
-    >
+    <ul css={list}>
       <li>
         <a
           href="https://twitter.com/light_planck"
