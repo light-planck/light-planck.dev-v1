@@ -4,16 +4,16 @@ import { Recursive } from 'next/font/google'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-const recursive = Recursive({
-  weight: '400',
-  subsets: ['latin'],
-})
-
 const Style = css`
   font-size: 3em;
   color: #369fff;
   text-decoration: none;
 `
+
+const recursive = Recursive({
+  weight: '400',
+  subsets: ['latin'],
+})
 
 const Logo: NextPage = () => {
   return (
