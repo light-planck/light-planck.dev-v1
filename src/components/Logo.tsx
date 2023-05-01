@@ -2,25 +2,26 @@ import type { NextPage } from 'next'
 import Link from 'next/link'
 import { Recursive } from 'next/font/google'
 
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
 const recursive = Recursive({
   weight: '400',
   subsets: ['latin'],
 })
 
+const Style = css`
+  font-size: 3em;
+  color: #369fff;
+  text-decoration: none;
+`
+
 const Logo: NextPage = () => {
   return (
-    <Link
-      href="/"
-      style={{
-        fontSize: '48px',
-        color: '#369FFF',
-        textDecoration: 'none',
-        fontFamily: recursive.style.fontFamily,
-        margin: '0.5em',
-      }}
-    >
-      light planck
-    </Link>
+    <div style={{ margin: '2em' }}>
+      <Link href="/" css={Style} className={recursive.className}>
+        light planck
+      </Link>
+    </div>
   )
 }
 

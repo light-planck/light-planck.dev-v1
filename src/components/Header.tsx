@@ -5,18 +5,19 @@ import type { NextPage } from 'next'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-const Wrapper = css`
+const Container = css`
   display: flex;
   justify-content: space-between;
   border-bottom: solid;
   border-color: #4d4e4f;
   border-width: 0.15em;
+  height: 8rem;
 `
 
 const Header: NextPage = () => {
   return (
-    <header style={{ height: '10rem' }}>
-      <div css={Wrapper}>
+    <header>
+      <div css={Container}>
         <Logo />
         <Nav />
         <Social />
