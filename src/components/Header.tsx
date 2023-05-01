@@ -6,6 +6,7 @@ import type { NextPage } from 'next'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 const container = css`
+  align-items: center;
   display: flex;
   justify-content: space-between;
   border-bottom: solid;
