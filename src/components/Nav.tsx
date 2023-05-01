@@ -11,8 +11,12 @@ const list = css`
 `
 
 const item = css`
-  color: white;
+  color: #e0dddd;
   text-decoration: none;
+
+  &:hover {
+    color: #369fff;
+  }
 `
 
 const Nav: NextPage = () => {
