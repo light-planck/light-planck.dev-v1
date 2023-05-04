@@ -3,6 +3,21 @@ import type { ReactNode } from 'react'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
+
+const container = css`
+  margin-top: 1.5em;
+  margin-left: 5em;
+  margin-right: 5em;
+  padding: 1.5em;
+
+  @media (max-width: 768px) {
+    margin-top: 1em;
+    margin-left: 2em;
+    margin-right: 1em;
+    padding: 1em;
+  }
+`
+
 const post = css`
   @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
@@ -10,13 +25,13 @@ const post = css`
   font-family: 'Noto Sans JP', sans-serif;
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: bold;
     font-family: 'Noto Serif JP', serif;
     color: #dfdfdf;
   }
   h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -35,6 +50,21 @@ const post = css`
     text-decoration: none;
     font-size: 1.2em;
   }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 1.1em;
+    }
+    a {
+      font-size: 0.9em;
+    }
+  }
 `
 
 interface Props {
@@ -43,16 +73,10 @@ interface Props {
 
 const PostBody: NextPage<Props> = ({ children }) => {
   return (
-    <div
-      css={post}
-      style={{
-        marginTop: '2em',
-        marginLeft: '5em',
-        marginRight: '15em',
-        padding: '1.5em',
-      }}
-    >
-      {children}
+    <div css={container}>
+      <div css={post} style={{}}>
+        {children}
+      </div>
     </div>
   )
 }
