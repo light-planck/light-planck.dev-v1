@@ -5,9 +5,13 @@ import { Recursive } from 'next/font/google'
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
 const logo = css`
-  font-size: 3em;
+  font-size: 2.5em;
   color: #369fff;
   text-decoration: none;
+
+  @media (max-width: 768px) {
+    font-size: 1.5em;
+  }
 `
 
 const recursive = Recursive({
