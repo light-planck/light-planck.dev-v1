@@ -8,6 +8,10 @@ const list = css`
   display: flex;
   gap: 1.2em;
   font-size: 1.5em;
+
+  @media (max-width: 768px) {
+    font-size: 0.75em;
+  }
 `
 
 const item = css`
