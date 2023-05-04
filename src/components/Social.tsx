@@ -9,6 +9,10 @@ const list = css`
   display: flex;
   gap: 1em;
   margin: 3em;
+
+  @media (max-width: 768px) {
+    font-size: 0.7em;
+  }
 `
 
 const Social: NextPage = () => {
