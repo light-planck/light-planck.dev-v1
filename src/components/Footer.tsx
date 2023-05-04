@@ -6,13 +6,17 @@ const container = css`
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: #343e5f;
+  background-color: #282f48;
   height: 5em;
   color: #cccccc;
 `
 const copyRight = css`
   margin: auto;
   font-size: 1em;
+
+  @media (max-width: 768px) {
+    font-size: 0.9em;
+  }
 `
 
 const thisYear = new Date().getFullYear()
