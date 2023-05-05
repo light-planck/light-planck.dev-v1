@@ -8,6 +8,7 @@ const About: NextPage = () => {
       <Head>
         <title>About</title>
       </Head>
+
       <PostBody>
         <h1>私について</h1>
         <h2>☆名前</h2>

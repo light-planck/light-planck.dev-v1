@@ -335,13 +335,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/font@npm:^13.3.1":
-  version: 13.3.1
-  resolution: "@next/font@npm:13.3.1"
-  checksum: ca7ed3474e7fe6ae0d6193ede9e7025be0637c3529d0ee27a24dcb7efa01cf393d7847618fe536c49e19a50933ad3437a55128fe9b884c34f2042ca42a6ff721
-  languageName: node
-  linkType: hard
-
 "@next/swc-darwin-arm64@npm:13.3.1":
   version: 13.3.1
   resolution: "@next/swc-darwin-arm64@npm:13.3.1"
@@ -3499,7 +3492,6 @@ __metadata:
     "@fortawesome/fontawesome-svg-core": "npm:^6.3.0"
     "@fortawesome/free-brands-svg-icons": "npm:^6.3.0"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
-    "@next/font": "npm:^13.3.1"
     "@types/cheerio": "npm:^0.22.31"
     "@types/highlightjs": "npm:^9.12.2"
     "@types/node": "npm:18.14.6"
