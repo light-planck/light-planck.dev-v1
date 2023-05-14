@@ -1,9 +1,10 @@
 # light-planck.dev
 
-## これは何？
+[light-planck.dev](https://www.light-planck.dev/)
+
+## このサイトについて
 
 私が学んだことや感じたことを、自由にアウトプットできるサイトです。
-[light-planck.dev](https://www.light-planck.dev/)
 
 ## 技術スタック
 
