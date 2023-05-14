@@ -62,7 +62,7 @@
   リセットCSSとして利用した。
 
 - Emotion  
-  当初は CSS-modules でスタイルをあてていたが、管理が大変だったので、css in JS でスタイルをあてた。
+  当初は CSS-modules でスタイルをあてていたが、管理が大変だったので、CSS in JS でスタイルをあてた。
 
 - Google Fonts  
-  Noto Sans JP', sans-serif, Noto Serif JP', serif, Robotoを利用した。
+  Noto Sans JP, sans-serif, Noto Serif JP, serif, Robotoを利用した。
