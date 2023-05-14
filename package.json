@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "production": "yarn build && yarn start"
+    "prod": "yarn build && yarn start"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",

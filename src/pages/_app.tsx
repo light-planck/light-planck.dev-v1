@@ -15,6 +15,14 @@ const global = css`
     background-color: #1e1e1e;
     color: white;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
 `
 
 config.autoAddCss = false
