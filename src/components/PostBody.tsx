@@ -51,6 +51,10 @@ const post = css`
     font-size: 1.2em;
   }
 
+  ul {
+    list-style: inside;
+  }
+
   @media (max-width: 700px) {
     h1 {
       font-size: 2em;

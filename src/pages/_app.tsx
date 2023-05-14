@@ -6,8 +6,6 @@ import type { NextPage } from 'next'
 import 'modern-css-reset/dist/reset.min.css'
 import { Roboto } from 'next/font/google'
 
-// import 'styles/styles.css'
-
 /** @jsxImportSource @emotion/react */
 import { Global, css } from '@emotion/react'
 const global = css`
