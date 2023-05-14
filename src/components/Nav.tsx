@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { css } from '@emotion/react'
 const style = css`
   margin: 2em;
+  font-size: 1.3em;
 
   a {
     color: white;
