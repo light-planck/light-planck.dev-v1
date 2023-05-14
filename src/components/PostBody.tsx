@@ -19,11 +19,6 @@ const container = css`
 `
 
 const post = css`
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-
-  font-family: 'Noto Sans JP', sans-serif;
-
   h1 {
     font-size: 2.5em;
     font-weight: bold;

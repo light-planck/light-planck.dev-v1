@@ -2868,6 +2868,47 @@ __metadata:
   languageName: node
   linkType: hard
 
+"light-planck.dev@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "light-planck.dev@workspace:."
+  dependencies:
+    "@emotion/react": "npm:^11.10.8"
+    "@emotion/styled": "npm:^11.10.8"
+    "@fortawesome/fontawesome-svg-core": "npm:^6.3.0"
+    "@fortawesome/free-brands-svg-icons": "npm:^6.3.0"
+    "@fortawesome/react-fontawesome": "npm:^0.2.0"
+    "@types/cheerio": "npm:^0.22.31"
+    "@types/highlightjs": "npm:^9.12.2"
+    "@types/node": "npm:18.14.6"
+    "@types/react": "npm:18.0.28"
+    "@types/react-dom": "npm:18.0.11"
+    "@typescript-eslint/eslint-plugin": "npm:^5.54.0"
+    "@typescript-eslint/parser": "npm:^5.54.0"
+    cheerio: "npm:^1.0.0-rc.12"
+    date-fns: "npm:^2.29.3"
+    eslint: "npm:^8.35.0"
+    eslint-config-next: "npm:13.2.3"
+    eslint-config-prettier: "npm:^8.7.0"
+    eslint-config-standard-with-typescript: "npm:^34.0.0"
+    eslint-plugin-consistent-default-export-name: "npm:^0.0.15"
+    eslint-plugin-import: "npm:^2.27.5"
+    eslint-plugin-n: "npm:^15.6.1"
+    eslint-plugin-promise: "npm:^6.1.1"
+    eslint-plugin-react: "npm:^7.32.2"
+    highlight.js: "npm:^11.7.0"
+    husky: "npm:^8.0.3"
+    lint-staged: "npm:^13.2.1"
+    microcms-js-sdk: "npm:^2.3.3"
+    modern-css-reset: "npm:^1.4.0"
+    next: "npm:^13.3.1"
+    prettier: "npm:2.8.4"
+    react: "npm:18.2.0"
+    react-div-100vh: "npm:^0.7.0"
+    react-dom: "npm:18.2.0"
+    typescript: "npm:^4.9.5"
+  languageName: unknown
+  linkType: soft
+
 "lilconfig@npm:2.1.0":
   version: 2.1.0
   resolution: "lilconfig@npm:2.1.0"
@@ -3482,47 +3523,6 @@ __metadata:
   checksum: cd67fb907e216bfca98c8c2c1ca434b2722e950201e6262b19b70c18268ee5bf2dde64366b3b51a626e28e2f193da41643d6fdcc210c8a0961fc351faa9259c8
   languageName: node
   linkType: hard
-
-"portfolio@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "portfolio@workspace:."
-  dependencies:
-    "@emotion/react": "npm:^11.10.8"
-    "@emotion/styled": "npm:^11.10.8"
-    "@fortawesome/fontawesome-svg-core": "npm:^6.3.0"
-    "@fortawesome/free-brands-svg-icons": "npm:^6.3.0"
-    "@fortawesome/react-fontawesome": "npm:^0.2.0"
-    "@types/cheerio": "npm:^0.22.31"
-    "@types/highlightjs": "npm:^9.12.2"
-    "@types/node": "npm:18.14.6"
-    "@types/react": "npm:18.0.28"
-    "@types/react-dom": "npm:18.0.11"
-    "@typescript-eslint/eslint-plugin": "npm:^5.54.0"
-    "@typescript-eslint/parser": "npm:^5.54.0"
-    cheerio: "npm:^1.0.0-rc.12"
-    date-fns: "npm:^2.29.3"
-    eslint: "npm:^8.35.0"
-    eslint-config-next: "npm:13.2.3"
-    eslint-config-prettier: "npm:^8.7.0"
-    eslint-config-standard-with-typescript: "npm:^34.0.0"
-    eslint-plugin-consistent-default-export-name: "npm:^0.0.15"
-    eslint-plugin-import: "npm:^2.27.5"
-    eslint-plugin-n: "npm:^15.6.1"
-    eslint-plugin-promise: "npm:^6.1.1"
-    eslint-plugin-react: "npm:^7.32.2"
-    highlight.js: "npm:^11.7.0"
-    husky: "npm:^8.0.3"
-    lint-staged: "npm:^13.2.1"
-    microcms-js-sdk: "npm:^2.3.3"
-    modern-css-reset: "npm:^1.4.0"
-    next: "npm:^13.3.1"
-    prettier: "npm:2.8.4"
-    react: "npm:18.2.0"
-    react-div-100vh: "npm:^0.7.0"
-    react-dom: "npm:18.2.0"
-    typescript: "npm:^4.9.5"
-  languageName: unknown
-  linkType: soft
 
 "postcss@npm:8.4.14":
   version: 8.4.14
@@ -4281,11 +4281,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A^4.9.5#optional!builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=23ec76"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 09f82f25664c79d5cccc389502175093becf51d691b443c79294303681544a399fb42f8384b535ddeba48cadb64e7d14b42de40d8ade4418bb43174989dd8685
+  checksum: 0b1a831cfef3e967a806ff1d4b28cfe4d3b71d06195ae0c8ece14c6353ec20165ae9b79c18be93ecd33529690648189aef56234c88b26aadb500b81ddb902cfc
   languageName: node
   linkType: hard
 
