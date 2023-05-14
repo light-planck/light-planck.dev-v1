@@ -2903,7 +2903,6 @@ __metadata:
     next: "npm:^13.3.1"
     prettier: "npm:2.8.4"
     react: "npm:18.2.0"
-    react-div-100vh: "npm:^0.7.0"
     react-dom: "npm:18.2.0"
     typescript: "npm:^4.9.5"
   languageName: unknown
@@ -3582,15 +3581,6 @@ __metadata:
   version: 1.2.3
   resolution: "queue-microtask@npm:1.2.3"
   checksum: 84624bee6c25c9d9776242ce0dcc3e15f703d897f4b7d982f32ef4d88c51048507a0999d9ff038ec46f65901655460b69240e414da1cebc2d723987ec81cbae8
-  languageName: node
-  linkType: hard
-
-"react-div-100vh@npm:^0.7.0":
-  version: 0.7.0
-  resolution: "react-div-100vh@npm:0.7.0"
-  peerDependencies:
-    react: ">=16.8.0"
-  checksum: 4d73b4371dcb3525f620a4e77b66f8d8ee644bb77d10cbbe52a4e95dc3e1f6e64cfeca0d97e0037553e37e68158f5f485ad5216c52f2b90a5be7d15879531471
   languageName: node
   linkType: hard
 

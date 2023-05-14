@@ -35,7 +35,7 @@ const post = css`
   }
   p {
     font-size: 1.3em;
-    line-height: 1.4;
+    line-height: 1.6;
     letter-spacing: 0.02em;
     color: white;
     font-family: 'Noto Serif JP', serif;
