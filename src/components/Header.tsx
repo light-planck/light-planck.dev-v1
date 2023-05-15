@@ -1,6 +1,5 @@
 import Logo from './Logo'
 import Nav from './Nav'
-import Social from './Social'
 import type { NextPage } from 'next'
 
 /** @jsxImportSource @emotion/react */
@@ -21,7 +20,6 @@ const Header: NextPage = () => {
       <div css={container}>
         <Logo />
         <Nav />
-        <Social />
       </div>
     </header>
   )

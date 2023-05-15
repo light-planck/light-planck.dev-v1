@@ -2,20 +2,24 @@ import type { NextPage } from 'next'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-const container = css`
-  text-align: center;
-  display: flex;
-  justify-content: center;
+import Social from './Social'
+const style = css`
   background-color: #282f48;
-  height: 5em;
+  height: 7em;
   color: #cccccc;
-`
-const copyRight = css`
-  margin: auto;
-  font-size: 1em;
 
-  @media (max-width: 768px) {
-    font-size: 0.9em;
+  display: flex;
+  margin-top: auto;
+  justify-content: center;
+  flex-direction: column;
+
+  small {
+    text-align: center;
+    font-size: 1em;
+
+    @media (max-width: 768px) {
+      font-size: 0.9em;
+    }
   }
 `
 
@@ -23,12 +27,9 @@ const thisYear = new Date().getFullYear()
 
 const Footer: NextPage = () => {
   return (
-    <footer style={{ marginTop: 'auto' }}>
-      <div css={container}>
-        <small css={copyRight}>
-          &copy;{thisYear} light-planck. All Rights Reserved.
-        </small>
-      </div>
+    <footer css={style}>
+      <Social />
+      <small>&copy;{thisYear} light-planck. All Rights Reserved.</small>
     </footer>
   )
 }

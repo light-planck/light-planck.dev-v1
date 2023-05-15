@@ -4,21 +4,22 @@ import type { NextPage } from 'next'
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react'
-const list = css`
+const style = css`
   list-style: none;
   display: flex;
-  gap: 1em;
-  margin: 3em;
+  justify-content: center;
+  gap: 4em;
+  align-items: center;
+  font-size: 1em;
 
   @media (max-width: 768px) {
     font-size: 0.7em;
-    display: none;
   }
 `
 
 const Social: NextPage = () => {
   return (
-    <ul css={list}>
+    <ul css={style}>
       <li>
         <a
           href="https://twitter.com/light_planck"
@@ -28,7 +29,7 @@ const Social: NextPage = () => {
           <FontAwesomeIcon
             icon={faTwitter}
             style={{ color: '#1da1f2' }}
-            size="2xl"
+            size="2x"
           />
           <span className="sr-only">Twitter</span>
         </a>
@@ -42,7 +43,7 @@ const Social: NextPage = () => {
           <FontAwesomeIcon
             icon={faGithub}
             style={{ color: 'white' }}
-            size="2xl"
+            size="2x"
           />
           <span className="sr-only">GitHub</span>
         </a>
