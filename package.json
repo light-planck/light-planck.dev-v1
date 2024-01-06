@@ -7,7 +7,7 @@
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",
     "preview": "vite preview",
-    "format": "biome format --write ./src && biome check --apply ./src"
+    "format": "biome format --write . && biome check --apply ."
   },
   "dependencies": {
     "react": "^18.2.0",
