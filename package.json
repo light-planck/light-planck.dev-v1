@@ -7,7 +7,7 @@
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",
     "preview": "vite preview",
-    "format": "biome format --write . && biome check --apply .",
+    "check": "biome check --apply .",
     "postinstall": "lefthook install"
   },
   "dependencies": {
