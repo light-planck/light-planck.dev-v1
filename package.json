@@ -7,7 +7,8 @@
     "dev": "bunx --bun vite",
     "build": "bunx --bun vite build",
     "preview": "vite preview",
-    "format": "biome format --write . && biome check --apply ."
+    "format": "biome format --write . && biome check --apply .",
+    "postinstall": "lefthook install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,6 +19,7 @@
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "lefthook": "^1.5.5",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
